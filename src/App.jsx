@@ -241,7 +241,7 @@ const Portfolio = () => {
               <Linkedin size={18} />
               <span>LinkedIn</span>
             </a>
-            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 border border-purple-500 rounded-full hover:bg-purple-500/20 transition-all duration-300 text-sm sm:text-base font-medium">
+            <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AKzYXQ0nIs-_oyd5tXTzXP40hLFA-gAz1SHy8NK9THaopwhHI9WyKOczp-PsaDXSVAR-uop0tDKuzdwXgceNX5R4AB6Y&user=rMZs-twAAAAJ" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 border border-purple-500 rounded-full hover:bg-purple-500/20 transition-all duration-300 text-sm sm:text-base font-medium">
               <BookOpen size={18} />
               <span>Scholar</span>
             </a>
