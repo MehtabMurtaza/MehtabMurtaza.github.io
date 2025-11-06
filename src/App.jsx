@@ -28,7 +28,18 @@ const Portfolio = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // const scrollToSection = (id) => {
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //     setIsMenuOpen(false);
+  //   }
+  // };
   const scrollToSection = (id) => {
+    if (id === 'cv') {
+      window.open('/Resume_Mehtab_OCT25.pdf', '_blank');
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -36,13 +47,15 @@ const Portfolio = () => {
     }
   };
 
+
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'publications', label: 'Publications' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
-    { id: 'awards', label: 'Awards' }
+    { id: 'awards', label: 'Awards' },
+    { id: 'cv', label: 'CV' }
   ];
 
   const publications = [
@@ -224,12 +237,13 @@ const Portfolio = () => {
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-4">
-            Ph.D. Student in Computer Science | AI/ML Researcher
+            Ph.D. Student in Computer Science | HCI + AI/ML Researcher
           </p>
           
           <p className="text-base sm:text-lg text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Computer Science Ph.D. student at UC Merced with research interests in LLMs, medical AI, and automated program repair. 
-            Former Michigan State graduate (3.96 GPA) with publications in GECCO and AMIA.
+            Computer Science Ph.D. student at UC Merced with research interests in Human Computer Interaction, AI/ML, LLMs, medical AI. 
+            Michigan State University graduate and former intern at Mayo Clinic with publications in GECCO and AMIA. Currently working with Dr. Ahmed Sabbir Arif and
+            part of the Inclusive Interactive Lab.
           </p>
           
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
@@ -245,7 +259,7 @@ const Portfolio = () => {
               <BookOpen size={18} />
               <span>Scholar</span>
             </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 border border-purple-500 rounded-full hover:bg-purple-500/20 transition-all duration-300 text-sm sm:text-base font-medium">
+            <a href="https://github.com/MehtabMurtaza" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 border border-purple-500 rounded-full hover:bg-purple-500/20 transition-all duration-300 text-sm sm:text-base font-medium">
               <Github size={18} />
               <span>GitHub</span>
             </a>
